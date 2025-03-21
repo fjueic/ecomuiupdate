@@ -13,7 +13,7 @@ const NavBar = () => {
             <Link to="/" className="flex items-center space-x-2">
                 <Store />
                 <span className="font-bold text-xl hover:text-gray-200 transition-colors">
-                    E-Commerce
+                    NOVAMART
                 </span>
             </Link>
 
