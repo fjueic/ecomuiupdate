@@ -19,7 +19,7 @@ function useQueryState(key, defaultValue) {
             } else {
                 newParams.delete(key);
             }
-            setSearchParams(newParams, { replace: true }); // Avoids history clutter
+            setSearchParams(newParams, { replace: true });
         },
         [key, searchParams, setSearchParams]
     );

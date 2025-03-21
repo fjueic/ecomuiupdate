@@ -13,7 +13,7 @@ const CategoryCard = ({ category, index }) => {
                 setImage(data.products?.[0]?.thumbnail);
                 setLoading(false);
             })
-            .catch(() => setLoading(false)); // Handle errors
+            .catch(() => setLoading(false));
     }, [category.slug]);
 
     return (
@@ -34,7 +34,7 @@ const CategoryCard = ({ category, index }) => {
                             src={image}
                             alt={category.name}
                             className="w-full h-full object-cover transition-opacity opacity-0"
-                            onLoad={(e) => (e.target.style.opacity = 1)} // Smooth fade-in
+                            onLoad={(e) => (e.target.style.opacity = 1)}
                         />
                     )}
 
